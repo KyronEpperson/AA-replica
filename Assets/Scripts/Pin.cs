@@ -32,5 +32,10 @@ public class Pin : MonoBehaviour
             FindObjectOfType<GameManager>().EndGame();
        }
     }
+
+    public void AdjustSpeed (float newSpeed)
+    {
+        speed = newSpeed;
+    }
     
 }
