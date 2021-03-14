@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManagaer : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-
     private bool gameHasEnded = false;
 
     public Rotator rotator;
@@ -16,8 +15,8 @@ public class GameManagaer : MonoBehaviour
 
     public void EndGame()
     {
-           
-            if (gameHasEnded==true)
+
+        if (gameHasEnded == true)
             return;
 
         rotator.enabled = false;
